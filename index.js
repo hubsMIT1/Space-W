@@ -70,7 +70,7 @@ function start() {
                         spcship.y += 0.03;
                     }
                     if (e.key == "ArrowRight" && spcship.x < w1 - 70) {
-                        spcship.x += 2;
+                        spcship.x += 0.03;
                     }
                 })
                 // addEventListener("keyup", function(e) {
@@ -179,7 +179,7 @@ function start() {
                 // }
             alnPic.push(new alnImages(w1, h2 - h, alnImgs, alnW, alnW, "image"));
             // console.log(h1, h3, h, h2 - h, alnW)
-        }, 1500)
+        }, 1200)
     }
     aliens();
 
@@ -209,7 +209,7 @@ function start() {
             this.draw();
             this.x += (Math.random() * 20) - 10;
             this.y += (Math.random() * 16) - 8;
-            this.alpha -= 0.1;
+            this.alpha -= 0.3;
             // this.x += 50; //this.speed //this.x + this.speed;
         }
     }
@@ -329,7 +329,7 @@ function start() {
             } else {
                 // console.log(k)
                 Lavels.text = "LEVEL : " + level;
-                Lavels.text = "LEVEL : " + level + "\n" + "YOU GOT " + (level * 5) + " BONUS POINTS";
+                Lavels.text = "LEVEL : " + level + " \n" + " YOU GOT " + (level * 5) + " BONUS POINTS";
                 Lavels.update();
 
             }
@@ -439,14 +439,14 @@ function start() {
 
 
                 })
-                if (scr % 10 == 0) {
+                if (scr % 20 == 0 && scr > 0) {
 
                     // setTimeout(() => {
                     lvls.push(new Lavels(w1 / 3, h1 / 3, "red", 300, 300, "text"))
                         // var lvls = new Lavels(w1 / 2, 40, "red", 100, 100, "text")
                         // setInterval(() => {
 
-                    level = scr / 10;
+                    level = scr / 20;
 
 
 

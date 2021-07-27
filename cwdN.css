@@ -1,0 +1,139 @@
+.anim {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #F17C58, #E94584, #24AADB, #27DBB1, #FF3706, red, orange, green, blue, indigo, violet);
+    background-size: 600% 100%;
+    animation: gradient1 3s linear infinite;
+}
+
+@keyframes gradient1 {
+    0% {
+        background-position: 0%
+    }
+    100% {
+        background-position: 100%
+    }
+}
+
+canvas {
+    color: red;
+    background: url(bg21.jpg);
+    background-size: 100% 100%;
+}
+
+.end {
+    position: fixed;
+    padding-left: 5%;
+    /* margin: 10%; */
+    /* width: 70%; */
+    /* height: 10%; */
+    visibility: hidden;
+}
+
+.btnS {
+    text-align: center;
+    background: white;
+    border: 1px solid white;
+    box-shadow: 10px 10px 300px black;
+    border-radius: 10px;
+}
+
+.btn {
+    background-size: cover;
+    font-size: 40px;
+    color: lime;
+    background: black;
+    /* visibility: hidden; */
+    border: 10px solid black;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 10px 10px 30px #000000;
+    /* padding-bottom: 10px; */
+}
+
+.btn:hover {
+    background: rgb(239, 240, 239);
+}
+
+.score,
+.highS {
+    font-size: 50px;
+    color: black;
+    background: bk;
+    border: 0px solid black;
+    padding-bottom: 20px;
+    /* position: relative; */
+    /* top: 30px;
+    left: 60px;
+    width: 400px;
+    height: 100px; */
+    /* float: left; */
+}
+
+.bg1 {
+    /* background: linear-gradient(#C33764, #1D2671); */
+    background: linear-gradient(45deg, #F17C58, #E94584, #24AADB, #27DBB1, rgb(0, 255, 0), blue, #FF3706);
+    /* background-size: 100% 100%; */
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    /* .anim { */
+    /* width: 100%;
+    height: 100%; */
+    /* background: linear-gradient (45 deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706); */
+    background-size: 600% 100%;
+    animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%
+    }
+    100% {
+        background-position: 100%
+    }
+}
+
+
+/* } */
+
+.start {
+    text-align: center;
+    /* background-size: cover; */
+    font-size: 40px;
+    color: lime;
+    background: black;
+    /* visibility: hidden; */
+    border: 10px solid black;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 10px 10px 30px #000000;
+}
+
+* {
+    margin: 0
+}
+
+.lvl {
+    font-size: 20px;
+    color: rgb(52, 12, 231);
+    /* background: bk; */
+    border: 0px solid black;
+    float: left;
+    display: inline;
+    gap: 20px;
+    flex-direction: row;
+    /* padding-bottom: 20px; */
+}
+
+.bnsPt {
+    float: right;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: rgb(10, 240, 10);
+    /* background: bk; */
+    border: 0px solid black;
+    /* display: inline; */
+    /* padding-bottom: 20px; */
+}

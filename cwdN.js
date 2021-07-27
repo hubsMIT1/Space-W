@@ -97,7 +97,7 @@ function start() {
 
 
     // console.log(spcship.x, spcship.y)
-    const spcship = new ship(30, h1 - h1 / 2.6, './spc42.png', 80, 80, "image")
+    const spcship = new ship(30, h1 - h1 / 2.6, '/Space-W/spc42.png', 80, 80, "image")
         // spcship.draw();
         // window.onload = function anim() {
         //         spcship.draw();
@@ -166,7 +166,7 @@ function start() {
 
         setInterval(() => {
 
-            var alnArr = ['aln11.png', 'aln22.png', 'alien.png'];
+            var alnArr = ['/Space-W/aln11.png', '/Space-W/aln22.png', '/Space-W/alien.png'];
             let n = Math.floor((Math.random() * 3));
             var alnImgs = alnArr[n];
             h2 = h1 - 10
@@ -294,7 +294,7 @@ function start() {
     addEventListener("keydown", function(e) {
             if (e.key == " ") {
                 // const bullet = new bulImages(30 + 70, h1 - h1 / 2.3 + 27, './bul13.png', 60, 20, "image")
-                bullets.push(new bulImages(spcship.x + 70, spcship.y + 27, './bul13.png', 60, 20, "image"));
+                bullets.push(new bulImages(spcship.x + 70, spcship.y + 27, '/Space-W/bul13.png', 60, 20, "image"));
 
                 // console.log(bullets);
             }
@@ -400,7 +400,7 @@ function start() {
                         // console.log(d1 - bulImages.width - alnImages.width, d2 - bulImages.width )
                         for (var i = 1; i <= 50; i++) {
                             fw = (Math.floor(Math.random() * (16 - 8)) + 8)
-                            fires.push(new firePic(alnImages.x, alnImages.y, './fr66.png', fw, fw, "image"))
+                            fires.push(new firePic(alnImages.x, alnImages.y, '/Space-W/fr66.png', fw, fw, "image"))
                         }
 
 

@@ -104,6 +104,7 @@ canvas {
     font-size: 40px;
     color: lime;
     background: black;
+    cursor:pointer;
     /* visibility: hidden; */
     border: 10px solid black;
     border-radius: 20px;

@@ -11,6 +11,13 @@ var bg1 = document.querySelector(".bg1")
 var st = document.querySelector(".start")
 var lvl = document.querySelector(".lvl")
 var bnsPt = document.querySelector(".bnsPt")
+var a1 = new Audio('/Space-W/mus1.mp3');
+var a2 = new Audio('/Space-W/rdc1.mp3');
+var a3 = new Audio('/Space-W/shoot.mp3');
+var a4 = new Audio('/Space-W/dead.mp3');
+var a5 = new Audio('/Space-W/over2.m4a')
+var a6 = new Audio('/Space-W/lvlFire');
+var lvlup = new Audio('/Space-W/lvlUP.mp3');
     // bg1.style.height = h1 + 'px'
 bg1.style.width = w1 + 'px'
 st.style.margin = h1 / 2 + 'px'
@@ -295,7 +302,7 @@ function start() {
             if (e.key == " ") {
                 // const bullet = new bulImages(30 + 70, h1 - h1 / 2.3 + 27, './bul13.png', 60, 20, "image")
                 bullets.push(new bulImages(spcship.x + 70, spcship.y + 27, '/Space-W/bul13.png', 60, 20, "image"));
-
+  a3.play();
                 // console.log(bullets);
             }
         })
@@ -374,13 +381,16 @@ function start() {
 
 
                 if ((d1 - spcship.width < -20 && (d2 > 9 && d2 < 45)) || (d1 - spcship.width < -70 && ((d2 < 10 && d2 > -40) || (d2 > 45 && d2 < 80)))) {
+                    a5.play();
                     clearInterval(interval)
                     can.style.visibility = 'hidden'
                     end.style.visibility = 'visible';
                     end.style.position = 'absolute';
                     end.style.top = h1 / 4 + 'px'
+                    over.style.left = w1 / 10 + "px"
+                    over.style.top = -h1 / 4.3 + 'px'
                     end.style.left = w1 / 3 + "px"
-                    end.style.width = w1 / 3 + 'px'
+                        // end.style.width = w1 / 3 + 'px'
                     bd.style.height = h1 + 'px'
                         // bd.style.background = 'linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706)'
                         // bd.style.backgroundRepeat = 'no-repeat'
@@ -412,7 +422,7 @@ function start() {
                             setTimeout(() => {
                                 // alnPic.splice(alnIndex, 1);
                                 bullets.splice(bulIndex, 1)
-
+  a2.play();
                                 // fires.push(new firePic(alnImages.x, alnImages.y, './fr2.jpg', 1000, 1000, "image"))
                                 // firePic.x = bulImages.x;
                                 // firePic.y = bulImages.y;
@@ -424,6 +434,7 @@ function start() {
                                 alnPic.splice(alnIndex, 1);
 
                                 bullets.splice(bulIndex, 1);
+                                 a4.play();
                                 // fire.update();
                             }, 0)
                         }
@@ -440,7 +451,7 @@ function start() {
 
                 })
                 if (scr % 20 == 0 && scr > 0) {
-
+ lvlup.play();
                     // setTimeout(() => {
                     lvls.push(new Lavels(w1 / 3, h1 / 3, "red", 300, 300, "text"))
                         // var lvls = new Lavels(w1 / 2, 40, "red", 100, 100, "text")

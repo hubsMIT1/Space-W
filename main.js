@@ -388,7 +388,7 @@ a3.play();
                     end.style.visibility = 'visible';
                     end.style.position = 'absolute';
                     end.style.top = h1 / 4 + 'px'
-                    over.style.left = w1 / 10 + "px"
+                   
                     over.style.top = -h1 / 4.3 + 'px'
                     end.style.left = w1 / 3 + "px"
                         // end.style.width = w1 / 3 + 'px'
@@ -397,7 +397,7 @@ a3.play();
                         // bd.style.backgroundRepeat = 'no-repeat'
                         // bd.style.animation = 'gradient 16s linear infinte'
                     bd.classList.add('anim');
-
+ over.style.left = w1 / 10 + "px"
                     // console.log(d2)
                 }
                 bullets.forEach((bulImages, bulIndex) => {

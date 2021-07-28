@@ -29,8 +29,21 @@ canvas {
     /* height: 10%; */
     visibility: hidden;
 }
+.over {
+    position: absolute;
+    /* top: -150px; */
+    font-family: fantasy;
+    font-size: 50px;
+    text-align: center;
+    color: ghostwhite;
+    /* background: rgba(8, 3, 8, 0.3); */
+    /* border: 2px solid black; */
+    /* border-radius: 10px; */
+    /* padding-bottom: 10px; */
+}
 
 .btnS {
+    padding: 10px;
     text-align: center;
     background: white;
     border: 1px solid white;

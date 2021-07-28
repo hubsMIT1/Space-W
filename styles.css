@@ -31,12 +31,26 @@ canvas {
 }
 
 .btnS {
+    padding: 10px;
     text-align: center;
     background: white;
     border: 1px solid white;
     box-shadow: 10px 10px 300px black;
     border-radius: 10px;
 }
+.over {
+    position: absolute;
+    /* top: -150px; */
+    font-family: fantasy;
+    font-size: 50px;
+    text-align: center;
+    color: ghostwhite;
+    /* background: rgba(8, 3, 8, 0.3); */
+    /* border: 2px solid black; */
+    /* border-radius: 10px; */
+    /* padding-bottom: 10px; */
+}
+
 
 .btn {
     background-size: cover;

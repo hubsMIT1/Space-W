@@ -180,7 +180,8 @@ function start() {
             h2 = h1 - 10
             h3 = h2 - h2 / 2.6 - 165;
             h = (Math.floor(Math.random() * (h3 - 40)) + 40)
-            alnW = (Math.floor(Math.random() * (61 - 35)) + 35)
+            alnH = level * 2;
+            alnW = (Math.floor(Math.random() * ((61 + alnH) - 35)) + 35)
                 // var x;
                 // var speed = {
                 //     x: -3
@@ -415,9 +416,9 @@ a3.play();
                         }
 
 
-                        if (alnImages.width - 45 > 6) {
-                            alnImages.width -= 6;
-                            alnImages.height -= 6;
+                        if (alnImages.width - 45 > (6 + level)) {
+                            alnImages.width -= 6 + level;
+                            alnImages.height -= 6 + level;
 
 
                             setTimeout(() => {

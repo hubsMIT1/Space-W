@@ -19,9 +19,10 @@ var a4 = new Audio('/Space-W/dead.mp3');
 var a5 = new Audio('/Space-W/over2.m4a')
 var a6 = new Audio('/Space-W/lvlFire.mp3');
 var lvlup = new Audio('/Space-W/lvlUP.mp3');
-    // bg1.style.height = h1 + 'px'
+bg1.style.height = h1 + 'px'
 bg1.style.width = w1 + 'px'
-st.style.margin = h1 / 2 + 'px'
+bg1.style.paddingTop = h1 / 2 + 'px'
+
 
 function start() {
     // var can = document.querySelector('canvas');

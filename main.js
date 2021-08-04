@@ -22,7 +22,7 @@ var lvlup = new Audio('/Space-W/lvlUP.mp3');
 bg1.style.height = h1 + 'px'
 bg1.style.width = w1 + 'px'
 bg1.style.paddingTop = h1 / 2 + 'px'
-
+var bd = document.querySelector('body');
 
 function start() {
     // var can = document.querySelector('canvas');
@@ -32,7 +32,7 @@ function start() {
     st.remove();
     var can = document.createElement('canvas');
     c = can.getContext('2d');
-    var bd = document.querySelector('body');
+    
     bd.insertBefore(can, bd.childNodes[0])
     can.width = innerWidth;
     can.height = innerHeight - 10;

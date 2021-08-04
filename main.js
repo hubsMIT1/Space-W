@@ -508,7 +508,7 @@ a3.play();
                 // }
                 bnsPt.innerHTML = " BONUS POINTS : " + (level * 5);
 
-                lvl.innerHTML = "MAX LEVEL : " + highLevel;
+                lvl.innerHTML = "MAX LEVEL : " + highLevel + ' ';
 
                 document.querySelector('.score').innerHTML = "Your Score : " + scr;
                 document.querySelector('.highS').innerHTML = " Best Score : " + highscore;

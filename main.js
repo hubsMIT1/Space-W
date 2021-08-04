@@ -27,7 +27,8 @@ bg1.style.paddingTop = h1 / 2 + 'px'
 function start() {
     // var can = document.querySelector('canvas');
 
-    bg1.remove();
+   // bg1.remove();
+    bd.classList.remove('bg1');
     st.remove();
     var can = document.createElement('canvas');
     c = can.getContext('2d');

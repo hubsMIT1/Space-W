@@ -27,8 +27,8 @@ var bd = document.querySelector('body');
 function start() {
     // var can = document.querySelector('canvas');
 
-   // bg1.remove();
-    bd.classList.remove('bg1');
+     bg1.remove();
+    //bd.classList.remove('bg1');
     st.remove();
     var can = document.createElement('canvas');
     c = can.getContext('2d');
